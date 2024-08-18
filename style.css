@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 55%;
+    margin: 30px auto;
+    display: flex;
+    border-radius: 10px;
+    height: 450px;
+    padding: 25px;
+    background-color: rgb(6, 6, 20);
+    box-shadow: 0 0 8px gray;
+}
+
+.divOne {
+    border-radius: 5px;
+    width: 45%;
+    background-color: rgba(50, 50, 53, 0.717);
+    border-radius: 8px;
+}
+
+.divTwo {
+    width: 55%;
+    color: white;
+    height: 100%;
+
+}
+
+.weatherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}
+
+.divTwo h1 {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.divTwo h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgOneContainer {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.imgOne {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.imgTwoContainer {
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.imgTwo {
+    width: 100px;
+    height: 100px;
+}
+
+.imgThreeContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgThreeContainer {
+    margin-top: 20px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.imgThree {
+    width: 60px;
+    height: 60px;
+}
+
+.imgFour {
+    width: 120px;
+    height: 120px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width: 480px) {
+    .divOne {
+        display: none;
+    }
+
+    .divTwo {
+        width: 100%;
+    }
+
+    .container {
+        height: 300px;
+        box-shadow: 0 0 5px black;
+
+    }
+}
